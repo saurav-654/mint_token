@@ -1,5 +1,5 @@
 # MyToken
----
+
 ## Overview
 
 MyToken is a custom ERC20 token built using the OpenZeppelin library. It includes features such as minting, burning, and transferring tokens, with certain functions restricted to the contract owner.
@@ -13,8 +13,7 @@ MyToken is a custom ERC20 token built using the OpenZeppelin library. It include
 
 
 
-    ```
-
+   
 ## Usage
 
 ### Deploying the Contract
