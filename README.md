@@ -10,10 +10,7 @@ MyToken is a custom ERC20 token built using the OpenZeppelin library. It include
 - **Burning**: Any token holder can burn their own tokens.
 - **Transferring**: Token holders can transfer tokens to other addresses.
 
-## Prerequisites
 
-- Solidity ^0.8.0
-- OpenZeppelin Contracts library
 
 
     ```
@@ -34,30 +31,30 @@ MyToken is a custom ERC20 token built using the OpenZeppelin library. It include
 
 Only the contract owner can mint new tokens.
 
-```solidity
+solidity
 function mint(address account, uint256 amount) public onlyOwner {
     _mint(account, amount);
 }
-```
+
 
 #### Burning Tokens
 
 Any token holder can burn their own tokens.
 
-```solidity
+solidity
 function burn(uint256 amount) public {
     _burn(msg.sender, amount);
 }
-```
+
 
 #### Transferring Tokens
 
 Token holders can transfer tokens to other addresses.
 
-```solidity
+solidity
 function transfer(address recipient, uint256 amount) public override returns (bool) {
     _transfer(msg.sender, recipient, amount);
     return true;
 }
-```
+
 
